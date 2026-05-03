@@ -15,8 +15,7 @@ import ToastNotification from '@/components/ToastNotification.vue'
 
     <!-- Footer -->
     <footer class="mt-20 border-t border-neutral-100 dark:border-neutral-800 py-8 text-center">
-      <p class="font-display text-2xl font-bold text-neutral-900 dark:text-white mb-1">LUXE</p>
-      <p class="text-sm font-mono text-neutral-400">CS3404 Mini Project · Built with Vue 3 + TypeScript + Tailwind CSS</p>
+      <p class="font-display text-2xl font-bold text-neutral-900 dark:text-white mb-1">Nebula</p>
     </footer>
   </div>
 </template>

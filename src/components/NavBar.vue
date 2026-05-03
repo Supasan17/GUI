@@ -39,7 +39,7 @@ function handleLogout(): void {
 
         <!-- Logo -->
         <RouterLink to="/" class="flex items-center gap-2 group">
-          <span class="font-display font-bold text-2xl text-neutral-900 dark:text-white tracking-tight group-hover:text-brand-500 transition-colors">LUXE</span>
+          <span class="font-display font-bold text-2xl text-neutral-900 dark:text-white tracking-tight group-hover:text-brand-500 transition-colors">Nebula</span>
           <span class="hidden sm:block w-1.5 h-1.5 rounded-full bg-brand-500"></span>
         </RouterLink>
 
