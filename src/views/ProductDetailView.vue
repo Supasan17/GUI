@@ -152,10 +152,15 @@ function formatDate(dateStr: string): string {
                 <p class="text-xs font-mono text-neutral-400 uppercase tracking-wider">Shipping</p>
                 <p class="text-neutral-700 dark:text-neutral-300 mt-0.5">{{ product.shippingInformation }}</p>
               </div>
-              <div>
-                <p class="text-xs font-mono text-neutral-400 uppercase tracking-wider">Warranty</p>
-                <p class="text-neutral-700 dark:text-neutral-300 mt-0.5">{{ product.warrantyInformation }}</p>
-              </div>
+              
+<div v-if="!['groceries'].includes(product.category)">
+  <p class="text-xs font-mono text-neutral-400 uppercase tracking-wider">Warranty</p>
+  <p class="text-neutral-700 dark:text-neutral-300 mt-0.5">{{ product.warrantyInformation }}</p>
+</div>
+<div v-else>
+  <p class="text-xs font-mono text-neutral-400 uppercase tracking-wider">Best Before</p>
+  <p class="text-neutral-700 dark:text-neutral-300 mt-0.5">Check packaging</p>
+</div>
               <div>
                 <p class="text-xs font-mono text-neutral-400 uppercase tracking-wider">Returns</p>
                 <p class="text-neutral-700 dark:text-neutral-300 mt-0.5">{{ product.returnPolicy }}</p>
